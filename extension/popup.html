@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domain Checker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Domain Checker</h1>
+      <p>Verifica la disponibilidad de dominios</p>
+    </div>
+    
+    <div class="search-container">
+      <div class="search-info">
+        <span class="info-icon">ℹ️</span> 
+        <span>Busca nombres de dominio y verifica su disponibilidad</span>
+      </div>
+      <form id="search-form">
+        <div class="input-group">
+          <span class="input-icon">🌐</span>
+          <input 
+            type="text" 
+            id="domain-query" 
+            placeholder="Escribe un nombre o palabra clave..." 
+          />
+          <button type="submit">🔍 Buscar</button>
+        </div>
+      </form>
+    </div>
+    
+    <div id="loading" class="loading hidden">Buscando dominios...</div>
+    
+    <div id="error" class="error hidden"></div>
+    
+    <div id="results" class="results"></div>
+    
+    <div class="export-buttons hidden" id="export-buttons">
+      <button id="expand-search" class="export-btn expand">🔍 Listar más</button>
+      <button id="export-txt" class="export-btn txt">📄 TXT</button>
+      <button id="export-csv" class="export-btn csv">📊 CSV</button>
+    </div>
+    
+    <div class="powered-by">
+      <div>Powered by Domainr API</div>
+      <div class="author-info">
+        <a href="https://github.com/686f6c61" target="_blank" rel="noopener noreferrer" class="github-link">
+          GitHub: 686f6c61
+        </a>
+        <span class="date-info">
+          Mayo 2025
+        </span>
+      </div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

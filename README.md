@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/badge/express-4.x-lightgrey.svg" alt="Express">
 </p>
 
-> Una aplicación full-stack para verificar la disponibilidad de dominios en tiempo real con una interfaz moderna y minimalista en blanco y negro.
+> Una aplicación full-stack para verificar la disponibilidad de dominios en tiempo real con una interfaz moderna y minimalista en blanco y negro. Incluye una extensión para Chrome que permite verificar dominios directamente desde el navegador.
 
 ## 📋 Índice de contenidos
 
@@ -22,6 +22,7 @@
 - [Uso](#-uso)
 - [Estructura del proyecto](#-estructura-del-proyecto)
 - [APIs y puntos finales](#-apis-y-puntos-finales)
+- [Extensión para Chrome](#-extensión-para-chrome)
 - [Tecnologías utilizadas](#-tecnologías-utilizadas)
 - [Configuración de API](#-configuración-de-api)
 - [Contribución](#-contribución)
@@ -37,6 +38,7 @@
 - **Enlaces directos**: Búsqueda rápida en Google, Bing, DuckDuckGo y Brave Search
 - **Diseño responsivo**: Interfaz limpia y moderna con diseño en blanco y negro
 - **Experiencia de usuario mejorada**: Iconos intuitivos y feedback visual claro
+- **Extensión para Chrome**: Verifica dominios directamente desde el navegador sin necesidad de abrir la aplicación web
 
 ## 🏗 Arquitectura
 
@@ -163,7 +165,7 @@ domain-checker/
 └── README.md             # Documentación principal
 ```
 
-## 🔌 APIs y puntos finales
+## APIs y puntos finales
 
 ### API del servidor
 
@@ -176,6 +178,32 @@ La aplicación utiliza dos endpoints principales de la API de Domainr:
 
 - `/v2/search`: Para buscar dominios sugeridos
 - `/v2/status`: Para verificar la disponibilidad de los dominios
+
+## 🧩 Extensión para Chrome
+
+El proyecto incluye una extensión para Chrome que permite verificar la disponibilidad de dominios directamente desde el navegador.
+
+### Características de la extensión
+
+- **Interfaz minimalista**: Diseño limpio que coincide con la aplicación web principal
+- **Verificación rápida**: Busca dominios al instante sin cambiar de pestaña
+- **Exportación**: Opciones para guardar resultados en formato TXT y CSV
+- **Enlaces directos**: Busca opciones de compra en diferentes motores de búsqueda
+- **Almacenamiento local**: Guarda tu clave API de forma segura en el navegador
+
+### Instalación de la extensión
+
+1. Navega a la carpeta `domain-checker-extension` del proyecto
+2. Abre Chrome y ve a `chrome://extensions/`
+3. Activa el "Modo desarrollador" (esquina superior derecha)
+4. Haz clic en "Cargar descomprimida" y selecciona la carpeta `domain-checker-extension`
+5. La extensión se instalará y estará lista para usar en tu navegador
+
+### Uso de la extensión
+
+1. Haz clic en el icono de la extensión en la barra de herramientas
+2. Introduce el nombre de dominio que deseas verificar
+3. Utiliza los botones para listar más dominios, exportar resultados o buscar opciones de compra
 
 ## 💻 Tecnologías utilizadas
 
