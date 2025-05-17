@@ -12,6 +12,10 @@
 
 > Una aplicación full-stack para verificar la disponibilidad de dominios en tiempo real con una interfaz moderna y minimalista en blanco y negro. Incluye una extensión para Chrome que permite verificar dominios directamente desde el navegador.
 
+<p align="center">
+  <img src="docs/images/home.png" alt="Domain Checker Screenshot" width="700">
+</p>
+
 ## 📋 Índice de contenidos
 
 - [Características principales](#-características-principales)
@@ -182,6 +186,10 @@ La aplicación utiliza dos endpoints principales de la API de Domainr:
 ## 🧩 Extensión para Chrome
 
 El proyecto incluye una extensión para Chrome que permite verificar la disponibilidad de dominios directamente desde el navegador.
+
+<p align="center">
+  <img src="docs/images/extension.png" alt="Chrome Extension Screenshot" width="400">
+</p>
 
 ### Características de la extensión
 
