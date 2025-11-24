@@ -1,0 +1,43 @@
+{
+  "name": "domain-checker-server",
+  "version": "2.0.0",
+  "description": "Backend Express API con seguridad reforzada para Domain Checker. Incluye rate limiting (100 req/15min), CORS whitelist, Helmet.js, validación de inputs, logging con Winston, timeouts y graceful shutdown. Conecta con Domains API (RapidAPI) para verificación de dominios.",
+  "main": "index.js",
+  "homepage": "https://github.com/686f6c61/Domain-Checker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/686f6c61/Domain-Checker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/686f6c61/Domain-Checker/issues"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node index.js",
+    "dev": "NODE_ENV=development nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "domain",
+    "checker",
+    "api",
+    "express"
+  ],
+  "author": "686f6c61",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
+    "winston": "^3.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}

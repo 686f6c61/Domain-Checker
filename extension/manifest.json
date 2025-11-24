@@ -1,0 +1,45 @@
+{
+  "_comment_manifest": "Manifest V3 - Chrome Extensions formato moderno (2021+)",
+  "_comment_name": "Nombre de la extensión que aparece en Chrome Web Store",
+  "_comment_version": "Versión semántica. Actualizar en cada release",
+  "_comment_author": "Autor: 686f6c61 | Fecha: Noviembre 2025 | Licencia: MIT",
+
+  "manifest_version": 3,
+  "name": "Domain Checker",
+  "version": "2.0.0",
+  "description": "Extensión Chrome para verificar disponibilidad de dominios en tiempo real. Búsqueda rápida con expansión automática de 11 TLDs, exportación TXT/CSV, y conexión directa a Domainr API via RapidAPI.",
+  "author": "686f6c61",
+  "homepage_url": "https://github.com/686f6c61/Domain-Checker",
+  "_comment_icons": "Iconos en 3 tamaños: 16px (toolbar), 48px (extensions page), 128px (Chrome Web Store)",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+
+  "_comment_action": "Define popup que aparece al hacer clic en el icono de la extensión",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+
+  "_comment_permissions": "activeTab: acceso a pestaña actual | storage: guardar API key localmente",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+
+  "_comment_host_permissions": "Dominios permitidos para fetch API. NOTA: Cambiar a domains-api.p.rapidapi.com al migrar",
+  "host_permissions": [
+    "https://domainr.p.rapidapi.com/*"
+  ],
+
+  "_comment_csp": "Content Security Policy: solo permite scripts propios (sin eval ni inline scripts)",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
